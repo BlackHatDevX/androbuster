@@ -1,0 +1,45 @@
+name: androbuster
+description: "A powerful directory and subdomain enumeration tool built with Flutter for security researchers and penetration testers."
+publish_to: 'none'
+version: 1.0.2
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.5.0
+  file_picker: ^8.0.0
+  url_launcher: ^6.2.5
+
+
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#1e40af"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  image: assets/icon/splash.png
+  color: "#1e40af"
+  android_12:
+    image: assets/icon/icon.png
+    color: "#1e40af"
+    icon_background_color: "#1e40af"
+  web: false
+  android: true
+  ios: false
